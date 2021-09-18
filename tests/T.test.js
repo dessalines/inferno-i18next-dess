@@ -1,3 +1,7 @@
+/**
+ * @jest-environment jsdom
+ */
+
 import i18next, { resources } from './i18next';
 import { render } from 'inferno';
 import { createElement } from 'inferno-create-element';
