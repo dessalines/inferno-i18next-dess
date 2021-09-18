@@ -1,0 +1,51 @@
+---
+kind: pipeline
+name: amd64
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+
+  - name: yarn
+    image: node:14-alpine
+    commands:
+      - yarn
+
+  - name: yarn test
+    image: node:14-alpine
+    commands:
+      - yarn test
+
+  - name: npm
+    image: plugins/npm
+    settings:
+      username:
+        from_secret: npm_username
+      password:
+        from_secret: npm_password
+      email: tyhou13@gmx.com
+    when:
+      ref:
+        - refs/tags/*
+
+---
+kind: pipeline
+name: arm64
+
+platform:
+  os: linux
+  arch: arm64
+
+steps:
+
+  - name: yarn
+    image: node:14-alpine
+    commands:
+      - yarn
+
+  - name: yarn test
+    image: node:14-alpine
+    commands:
+      - yarn test
