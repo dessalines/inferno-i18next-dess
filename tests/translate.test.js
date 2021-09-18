@@ -1,3 +1,6 @@
+/**
+ * @jest-environment jsdom
+ */
 import i18next, { resources } from './i18next';
 import { Provider, translate } from './../src';
 import { render } from 'inferno';
