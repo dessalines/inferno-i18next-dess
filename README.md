@@ -1,4 +1,4 @@
-inferno-i18next
+inferno-i18next-dess
 ===============
 
 **inferno-i18next** is a translation utility for Inferno components based on inferno-i18next by Midnite Ninja Innovations (https://bitbucket.org/midniteninja/inferno-i18next) and react-i18next by i18next (https://github.com/i18next/react-i18next)
@@ -8,7 +8,7 @@ inferno-i18next
 Via NPM:
 
 ```
-$ npm install --save github:nimbusec-oss/inferno-i18next
+yarn add inferno-i18next-dess
 ```
 
 ## Documentation
