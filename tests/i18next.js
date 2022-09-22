@@ -7,7 +7,7 @@ const resources = {
 			bar: '<1>bar</1>',
 			baz: '<1>{{count}}</1>',
 			qux: 'qux<1></1>',
-			qux_plural: 'quxes<1></1>',
+			qux_other: 'quxes<1></1>',
 			quux: '<1>{{name, uppercase}}</1>',
 			userMessagesUnread: 'Hello <1>{{name}}</1>, you have {{count}} unread messages. <3>Go to messages</3>.',
 			userMessagesUnread_plural: 'Hello <1>{{name}}</1>, you have {{count}} unread messages. <3>Go to messages</3>.'
