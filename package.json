@@ -1,7 +1,7 @@
 {
 	"name": "inferno-i18next-dess",
 	"description": "A translation utility for Inferno components using the i18next ecosystem.",
-	"version": "0.0.2-rc.1",
+	"version": "0.0.2",
 	"keywords": [
 		"i18n",
 		"l10n",
