@@ -84,6 +84,6 @@ describe('T', () => {
 	test('.constructor() should require the i18next instance in props', () => {
 		expect(() => {
 			new Provider({});
-		}).toThrowError('an instance of i18next is required');
+		}).toThrow('an instance of i18next is required');
 	});
 });

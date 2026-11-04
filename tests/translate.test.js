@@ -48,6 +48,6 @@ describe('translate', () => {
     expect(() => {
       const enhancedFoo = createElement(translate(Foo));
       render(enhancedFoo, container);
-    }).toThrowError('an instance of i18next must be provided');
+    }).toThrow('an instance of i18next must be provided');
   });
 });
