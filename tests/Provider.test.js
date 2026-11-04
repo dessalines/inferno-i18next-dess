@@ -31,7 +31,7 @@ describe('Provider', () => {
   test('.constructor() should require the i18next instance in props', () => {
     expect(() => {
       new Provider({});
-    }).toThrowError('an instance of i18next is required');
+    }).toThrow('an instance of i18next is required');
   });
 
   test(
@@ -41,7 +41,7 @@ describe('Provider', () => {
       expect(() => {
         const clonedI18Next = i18next.cloneInstance({lng: 'tl'});
         provider.componentWillReceiveProps({i18next: clonedI18Next});
-      }).toThrowError('changing of i18next instance is not supported');
+      }).toThrow('changing of i18next instance is not supported');
     }
   );
 });
